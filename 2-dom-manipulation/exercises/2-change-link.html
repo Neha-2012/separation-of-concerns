@@ -38,6 +38,11 @@
         <script id="dom-manipulation-script">
           'use strict';
           debugger;
+          const actual = document.getElementById('actual');
+          const actualA = actual.querySelector('a');
+          const expected = document.getElementById('expected');
+          const expectedA = expected.querySelector('a');
+          actualA.innerText = expectedA.innerText;
 
           // write me! (... without using cloneNode, that's kind of cheating)
         </script>

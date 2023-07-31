@@ -44,6 +44,20 @@
           'use strict';
           debugger;
 
+          const actual = document.getElementById('actual');
+          const h1 = document.createElement('h1');
+          const myText = document.createTextNode('a list of things');
+          h1.appendChild(myText);
+
+          const actualUl = actual.querySelector('ul');
+          actual.insertBefore(h1, actualUl);
+
+          const actualLi = actual.querySelectorAll('li');
+
+          const expected = document.getElementById('expected');
+          const expectedLi = expected.querySelectorAll('li');
+          actualLi[1].innerText = expectedLi[1].innerText;
+
           // write me! (... without using cloneNode, that's kind of cheating)
         </script>
       </div>

@@ -5,21 +5,21 @@ divEl.innerHTML = `
   <table>
     <tbody>
       <tr>
-        <td>w</td>
-        <td>x</td>
+        <td>a</td>
+        <td>b</td>
       </tr>
       <tr>
-        <td>y</td>
-        <td>z</td>
+        <td>c</td>
+        <td>d</td>
       </tr>
     </tbody>
   </table>
-`;
+`
 console.log(divEl.nodeName, divEl.cloneNode(true));
 
 // --- write some code ---
 //  you will need to access and update each <td> element
-
+document.body.appendChild(divEl)
 // --- --- --- --- --- ---
 
 console.log(divEl.nodeName, divEl.cloneNode(true));

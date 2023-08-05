@@ -2,13 +2,16 @@
 
 const ulEl = document.createElement('ul');
 ulEl.innerHTML = `
-  <li> toad </li>
-  <li>Frog</li>
-  <li>salad</li>
+  <li>toad</li>
+  <li>frog</li>
+  <li>salamander</li>
 `;
 console.log(ulEl.nodeName, ulEl.cloneNode(true));
 
 // --- write some code ---
+document.body.appendChild(ulEl)
+
+
 
 // --- --- --- --- --- ---
 

@@ -10,12 +10,24 @@ console.log(divEl.nodeName + ' (before)', divEl.cloneNode(true));
 
 // --- write some code ---
 //  replace the <p>
+const navEl=document.createElement('nav');
+const pEl=divEl.children[0]
+pEl.replaceWith(navEl)
+
 //  insert something before the <section>
+const h2El=document.createElement('h2');
+h2El.innerText ='new h2'
+const sectionEl=divEl.children[1]
+divEl.insertBefore(h2El,sectionEl)
 //  remove the <h1>
+
+divEl.removeChild(divEl.lastElementChild)
 //  append something to the end
 
+const appendEl=document.createElement('p')
+divEl.appendChild(appendEl)
 // --- --- --- --- --- ---
-
+console.log(divEl)
 console.log(divEl.nodeName + ' (after)', divEl.cloneNode(true));
 
 console.assert(divEl.childElementCount === 4, 'Test: .childElementCount');
